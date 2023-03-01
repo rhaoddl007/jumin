@@ -8,6 +8,7 @@ let arry3 = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5]
 let warning = document.querySelector('#warning');
 
 chkBtn.addEventListener('click', function () {
+    
     //주민번호 앞자리값을 받아옴
     let jumin1 = document.querySelector('#jumin1').value;
     //주민번호 뒷자리값을 받아옴
@@ -76,6 +77,8 @@ chkBtn.addEventListener('click', function () {
     sumResult = 0;
     lastResult = 0;
     // ***변수 초기화 끝***
+    document.querySelector('#jumin1').style.borderBottom = `none`;
+    document.querySelector('#jumin2').style.borderBottom = `none`;
     }else{
         warning.innerHTML = '유효하지 않습니다';
         warning.style.color = `#E87C03`;
@@ -85,7 +88,14 @@ chkBtn.addEventListener('click', function () {
     sumArry2 = [];
     sumResult = 0;
     lastResult = 0;
+
     }
+});
+chkBtn.addEventListener('mousedown',function(){
+    chkBtn.style.backgroundColor = `#bb0a12`;
+});
+chkBtn.addEventListener('mouseup',function(){
+    chkBtn.style.backgroundColor = `#e50914`;
 });
 
 
