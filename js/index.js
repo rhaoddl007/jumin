@@ -49,7 +49,7 @@ chkBtn.addEventListener('click', function () {
 
 // 마지막자리와 유효성검사를 한 값이 동일하면 유효한 주민번호 아니라면 warning에 메시지를 보냄
     }else if(sumResult == lastResult) {   
-        warning.innerHTML = '유요한 주민번호입니다';
+        warning.innerHTML = '유효한 주민번호입니다';
         warning.style.color = `#27b24a`;
         document.querySelector('#jumin1').style.borderBottom = `2px solid #27b24a`;
         document.querySelector('#jumin2').style.borderBottom = `2px solid #27b24a`;
